@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBg"
+    tools:context="com.example.appjogos.NovoGameActivity">
+
+    <EditText
+        android:id="@+id/editGame"
+        android:hint="Nome do Produto"
+        android:textColor="@color/colorFonte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editAno"
+        android:inputType="number"
+        android:hint="Ano de Lançamento"
+        android:textColor="@color/colorFonte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editPreco"
+        android:inputType="number"
+        android:hint="Preço"
+        android:textColor="@color/colorFonte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editQtd"
+        android:inputType="number"
+        android:hint="Quantidade em Estoque"
+        android:textColor="@color/colorFonte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Salvar"
+        android:onClick="salvarGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFonteTest"
+        android:textColor="#FE5295"/>
+</LinearLayout>

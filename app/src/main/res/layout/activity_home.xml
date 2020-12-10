@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBg"
+    tools:context="com.example.appjogos.HomeActivity">
 
-    <TextView
-        android:id="@+id/tvUser"
-        android:text=""
-        android:textColor="@color/colorBg"
+    <Button
+        android:onClick="novoGame"
+        android:text="Novo Produto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:background="@color/colorFonteTest"
+        android:textColor="#FE5295"/>
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Produtos:"
+        android:textColor="@color/colorFonte"
+        />
+    <ListView
+        android:id="@+id/listaGames"
+        android:textColor="@color/colorFonte"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
 
 </LinearLayout>
